@@ -36,12 +36,14 @@ main {
     grid-row: span 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
+    grid-template-rows: .5fr 3fr 3fr 3fr;
 }
 
-.project {
-    
+.projects > h2 {
+    grid-column: 1 / span 2;
 }
+
+.project {}
 
 .announcements{
     grid-column: 2 / span 1;
